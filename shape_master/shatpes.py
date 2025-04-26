@@ -1,9 +1,9 @@
 import math
 
-from area_calc.interface import Shape
+from interface.shape_2d import Shape2d
 
 
-class Circle(Shape):
+class Circle(Shape2d):
     """Круг"""
     def __init__(self, radius: float):
         if radius <= 0:
@@ -14,7 +14,7 @@ class Circle(Shape):
         return math.pi * self.radius ** 2
 
 
-class Triangle(Shape):
+class Triangle(Shape2d):
     """Треугольник"""
     def __init__(self, a: float, b: float, c: float):
         min_, middle_, max_ = sorted((a, b, c))

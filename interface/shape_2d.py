@@ -1,6 +1,9 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 
-class Shape(ABC):
+from interface.shape import Shape
+
+
+class Shape2d(Shape):
     @abstractmethod
     def area(self) -> float:
         """

@@ -2,7 +2,7 @@ import math
 
 import pytest
 
-from area_calc.shatpes import Circle
+from shape_master.shatpes import Circle
 
 
 @pytest.mark.parametrize('radius', range(1, 100))

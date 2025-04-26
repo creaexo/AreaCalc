@@ -2,7 +2,7 @@ import math
 
 import pytest
 
-from area_calc.shatpes import Triangle
+from shape_master.shatpes import Triangle
 
 
 @pytest.mark.parametrize(
