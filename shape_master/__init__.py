@@ -1,3 +1,4 @@
-from shape_master.shapes import Circle, Triangle
 
-__all__ = ["Circle", "Triangle"]
+from shape_master.shapes import Circle, Cube, Triangle, Tesseract
+
+__all__ = ['Circle', 'Cube', 'Tesseract', 'Triangle']
