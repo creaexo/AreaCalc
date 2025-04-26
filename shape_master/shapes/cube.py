@@ -11,5 +11,4 @@ class Cube(Shape3d):
         return 6 * self.side ** 2
 
     def volume(self) -> float:
-        """Вычислить объём"""
         return self.side ** 3

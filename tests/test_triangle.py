@@ -15,7 +15,7 @@ from shape_master import Triangle
 )
 def test_triangle_area(a: float, b: float, c: float):
     s = (a + b + c) / 2
-    assert Triangle(a, b, c).area() == math.sqrt(s * (s - a) * (s - b) * (s - c)), "Неправильная площадь треугольника"
+    assert Triangle(a, b, c).area() == math.sqrt(s * (s - a) * (s - b) * (s - c)), "Неожиданная площадь треугольника"
 
 
 @pytest.mark.parametrize(
