@@ -10,3 +10,7 @@ class Shape2d(Shape):
         Вычислить площадь фигуры.
         :return: Площадь фигуры.
         """
+
+    @property
+    def dimension(self) -> int:
+        return 2
