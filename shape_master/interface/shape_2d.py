@@ -1,6 +1,6 @@
 from abc import abstractmethod
 
-from interface.shape import Shape
+from shape_master.interface.shape import Shape
 
 
 class Shape2d(Shape):
