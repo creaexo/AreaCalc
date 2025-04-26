@@ -19,6 +19,20 @@ def test_triangle_area(a: float, b: float, c: float):
 
 
 @pytest.mark.parametrize(
+    'a, b, c, expected',
+    [
+        (6, 8, 10, True),
+        (.6, .8, 1, True),
+        (4, 3, 2, False),
+    ]
+)
+def test_rectangular_status(a: float, b: float, c: float, expected: bool):
+    assert Triangle(a, b, c).is_rectangular() == expected, (
+        "Неожиданный результат определения прямоугольного треугольника"
+    )
+
+
+@pytest.mark.parametrize(
     'a, b, c',
     [
         (-2, 2, 3),
@@ -42,4 +56,3 @@ def test_negative_side_rais_value_error(a: float, b: float, c: float):
 def test_two_side_lowest_one_rais_value_error(a: float, b: float, c: float):
     with pytest.raises(ValueError):
         Triangle(a, b, c)
-
