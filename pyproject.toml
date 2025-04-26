@@ -1,0 +1,15 @@
+[project]
+name = "shape_master"
+version = "0.0.1"
+description = "Библиотека для рассчётов с фигрурами разных измерений"
+authors = [
+    { name="Вадим Прокопьев", email="creaexo@gmail.com" }
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["shape_master"]
